@@ -1,5 +1,5 @@
 /*-----------------------------------------------------------------------------------
-	blog_proyecto_formativo
+	MesduTest
 	About: A shiny new Blocs website.
 	Author: Norman Sheeran
 	Version: 1.0
@@ -89,26 +89,6 @@ nav .dropdown-menu .nav-link{color:rgba(0,0,0,0.6)!important;} /* Maintain Downd
 	align-self: flex-end;
 }
 
-/* = Full Width Blocs 
--------------------------------------------------------------- */
-
-.full-width-bloc{
-	padding-left:0;
-	padding-right:0;
-}
-.full-width-bloc .row{
-	margin-left:0;
-	margin-right:0;
-}
-.full-width-bloc .container{
-	width:100%;
-	max-width:100%!important;
-}
-.full-width-bloc .carousel img{
-	width:100%;
-	height:auto;
-}
-
 
 /* Bloc Mask */
 
@@ -145,8 +125,14 @@ nav .dropdown-menu .nav-link{color:rgba(0,0,0,0.6)!important;} /* Maintain Downd
 	left:0;
 	right:0;
 }
+.texture-fabric::before{
+	background: url("img/texture-fabric.png");
+}
 .texture-darken::before{
 	background: rgba(0,0,0,0.5);
+}
+.texture-darken-strong::before{
+	background: rgba(0,0,0,0.8);
 }
 
 
@@ -329,26 +315,9 @@ nav .dropdown-menu .nav-link{color:rgba(0,0,0,0.6)!important;} /* Maintain Downd
 	right:100%;
 	left:auto}
 }
-/* = Open menus on hover
--------------------------------------------------------------- */
-@media (min-width: 992px){
-	.hover-open-submenu li:hover > .dropdown > .dropdown-menu, .hover-open-submenu .dropdown-menu > li:hover .dropdown-menu{
-	display: block;
-}
-.hover-open-submenu li .dropdown .dropdown-menu{
-	margin-top:0;
-}
-}
 /* = Bric adjustment margins
 -------------------------------------------------------------- */
 
-.mg-clear{
-	margin:0;
-}
-.mg-sm{
-	margin-top:10px;
-	margin-bottom:5px;
-}
 .mg-md{
 	margin-top:10px;
 	margin-bottom:20px;
@@ -389,6 +358,8 @@ button{
 
 
 
+/* = Cards
+-------------------------------------------------------------- */
 .card-sq, .card-sq .card-header, .card-sq .card-footer{
 	border-radius:0;
 }
@@ -559,7 +530,7 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 }
 .primary-divider{
 	width:150px;
-	height:6px;
+	height:3px;
 	background-color:var(--swatch-var-3409);
 	margin:10px auto 40px auto;
 }
@@ -623,41 +594,40 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 	max-width:200px;
 }
 .navbar-brand img{
-	width:180px;
+	width:50px;
+}
+h1,h2,h3,h4,h5,h6{
+	font-family:"Roboto";
+}
+.h1-heading-style{
+	font-size:66px;
 }
 .h1-style{
-	font-size:43px;
-	width:100%;
-	font-family:"Lato";
-	font-weight:900;
-}
-.h2-style{
-	font-size:36px;
-}
-.p-style{
-	font-family:"Lato";
-	font-weight:700;
+	font-size:45px;
 }
 .btn-style{
-	font-weight:bold;
-	width:94.18%;
-	border-radius:16.5px 16.5px 16.5px 16.5px;
+	border-radius:25px 25px 25px 25px;
 }
-.h1-hero-style{
-	font-size:47px;
-	font-family:"Lato";
-	font-weight:900;
+.btn-contact-us-style{
+	border-radius:13px 13px 13px 13px;
 }
-.p-hero-style{
-	font-size:23px;
-	font-family:"Lato";
-	font-weight:300;
+.btn-ver-proyecto-style{
+	border-radius:19px 19px 19px 19px;
 }
-.p-hot-beverages-style{
-	font-size:15px;
+.btn-bloc-13-style{
+	border-radius:13px 13px 13px 13px;
 }
-.btn-bloc-15-style{
-	border-radius:18px 18px 18px 18px;
+.btn-5-style{
+	border-radius:13px 13px 13px 13px;
+}
+.btn-6-style{
+	border-radius:12px 12px 12px 12px;
+}
+.btn-7-style{
+	border-radius:15px 15px 15px 15px;
+}
+.h1-bloc-14-style{
+	font-size:29px;
 }
 
 /* = Colour
@@ -672,9 +642,9 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 	
 	--swatch-var-6728:rgba(255,255,255,1.00);
 	
-	--swatch-var-3409:rgba(4,29,197,0.94);
+	--swatch-var-3409:rgba(0,58,108,1.00);
 	
-	--swatch-var-6719:#53BFF8;
+	--swatch-var-1783:#003A6C;
 	
 }
 
@@ -687,33 +657,44 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 .bgc-6728{
 	background-color:var(--swatch-var-6728);
 }
+.bgc-1783{
+	background-color:var(--swatch-var-1783);
+}
 .bgc-3409{
 	background-color:var(--swatch-var-3409);
 }
 
 /* Text colour styles */
 
+.tc-1783{
+	color:var(--swatch-var-1783)!important;
+}
 .tc-6728{
 	color:var(--swatch-var-6728)!important;
-}
-.tc-7376{
-	color:var(--swatch-var-7376)!important;
-}
-.tc-2941{
-	color:var(--swatch-var-2941)!important;
 }
 .tc-3409{
 	color:var(--swatch-var-3409)!important;
 }
+.tc-7376{
+	color:var(--swatch-var-7376)!important;
+}
 
 /* Button colour styles */
 
+.btn-c-1783{
+	background:var(--swatch-var-1783);
+	color:#FFFFFF!important;
+}
+.btn-c-1783:hover{
+	background:#000738!important;
+	color:#FFFFFF!important;
+}
 .btn-c-3409{
 	background:var(--swatch-var-3409);
 	color:#FFFFFF!important;
 }
 .btn-c-3409:hover{
-	background:rgba(0,0,146,0.94)!important;
+	background:#000738!important;
 	color:#FFFFFF!important;
 }
 
@@ -726,28 +707,28 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 	color:#CCCCCC!important;
 }
 
+/* Icon colour styles */
+
+.icon-3409{
+	color:var(--swatch-var-3409)!important;
+	border-color:var(--swatch-var-3409)!important;
+}
+
 /* Bloc image backgrounds */
 
-.bg-coffee-shop-bg{
-	background-image:url("img/coffee-shop-bg.jpg");
-	background-image: -webkit-image-set(url("img/coffee-shop-bg.webp") 1x,
-url("img/coffee-shop-bg.webp") 2x);background-image: image-set(url("img/coffee-shop-bg.jpg") 1x,
-url("img/coffee-shop-bg.jpg") 2x,url("img/coffee-shop-bg.webp") 1x,
-url("img/coffee-shop-bg.webp") 2x);
+.bg-DSC09251-20Atrio-20New{
+	background-image:url("img/DSC09251%20Atrio%20New.jpg");
+	background-image: -webkit-image-set(url("img/DSC09251%20Atrio%20New.webp") 1x,
+url("img/DSC09251%20Atrio%20New.webp") 2x);background-image: image-set(url("img/DSC09251%20Atrio%20New.jpg") 1x,
+url("img/DSC09251%20Atrio%20New.jpg") 2x,url("img/DSC09251%20Atrio%20New.webp") 1x,
+url("img/DSC09251%20Atrio%20New.webp") 2x);
 }
-.bg-coffee-shop-bg{
-	background-image:url("img/coffee-shop-bg.jpg");
-	background-image: -webkit-image-set(url("img/coffee-shop-bg.webp") 1x,
-url("img/coffee-shop-bg.webp") 2x);background-image: image-set(url("img/coffee-shop-bg.jpg") 1x,
-url("img/coffee-shop-bg.jpg") 2x,url("img/coffee-shop-bg.webp") 1x,
-url("img/coffee-shop-bg.webp") 2x);
-}
-.bg-blueprint-paper-texture{
-	background-image:url("img/blueprint-paper-texture.jpg");
-	background-image: -webkit-image-set(url("img/blueprint-paper-texture.webp") 1x,
-url("img/blueprint-paper-texture.webp") 2x);background-image: image-set(url("img/blueprint-paper-texture.jpg") 1x,
-url("img/blueprint-paper-texture.jpg") 2x,url("img/blueprint-paper-texture.webp") 1x,
-url("img/blueprint-paper-texture.webp") 2x);
+.bg-DSC09288-20Atrio-20New{
+	background-image:url("img/DSC09288%20Atrio%20New.jpg");
+	background-image: -webkit-image-set(url("img/DSC09288%20Atrio%20New.webp") 1x,
+url("img/DSC09288%20Atrio%20New.webp") 2x);background-image: image-set(url("img/DSC09288%20Atrio%20New.jpg") 1x,
+url("img/DSC09288%20Atrio%20New.jpg") 2x,url("img/DSC09288%20Atrio%20New.webp") 1x,
+url("img/DSC09288%20Atrio%20New.webp") 2x);
 }
 .bg-9{
 	background-image:url("img/9.jpg");
@@ -756,12 +737,26 @@ url("img/9.webp") 2x);background-image: image-set(url("img/9.jpg") 1x,
 url("img/9.jpg") 2x,url("img/9.webp") 1x,
 url("img/9.webp") 2x);
 }
-.bg-DSC09241-20Atrio-20New{
-	background-image:url("img/DSC09241%20Atrio%20New.jpg");
-	background-image: -webkit-image-set(url("img/DSC09241%20Atrio%20New.webp") 1x,
-url("img/DSC09241%20Atrio%20New.webp") 2x);background-image: image-set(url("img/DSC09241%20Atrio%20New.jpg") 1x,
-url("img/DSC09241%20Atrio%20New.jpg") 2x,url("img/DSC09241%20Atrio%20New.webp") 1x,
-url("img/DSC09241%20Atrio%20New.webp") 2x);
+.bg-317353{
+	background-image:url("img/317353.jpg");
+	background-image: -webkit-image-set(url("img/317353.webp") 1x,
+url("img/317353.webp") 2x);background-image: image-set(url("img/317353.jpg") 1x,
+url("img/317353.jpg") 2x,url("img/317353.webp") 1x,
+url("img/317353.webp") 2x);
+}
+.bg-WhatsApp-20Image-202024-10-29-20at-2014-19-04{
+	background-image:url("img/WhatsApp%20Image%202024-10-29%20at%2014.19.04.jpeg");
+	background-image: -webkit-image-set(url("img/WhatsApp%20Image%202024-10-29%20at%2014.19.04.webp") 1x,
+url("img/WhatsApp%20Image%202024-10-29%20at%2014.19.04.webp") 2x);background-image: image-set(url("img/WhatsApp%20Image%202024-10-29%20at%2014.19.04.jpeg") 1x,
+url("img/WhatsApp%20Image%202024-10-29%20at%2014.19.04.jpeg") 2x,url("img/WhatsApp%20Image%202024-10-29%20at%2014.19.04.webp") 1x,
+url("img/WhatsApp%20Image%202024-10-29%20at%2014.19.04.webp") 2x);
+}
+.bg-o-CALL-CENTER-facebook{
+	background-image:url("img/o-CALL-CENTER-facebook.jpg");
+	background-image: -webkit-image-set(url("img/o-CALL-CENTER-facebook.webp") 1x,
+url("img/o-CALL-CENTER-facebook.webp") 2x);background-image: image-set(url("img/o-CALL-CENTER-facebook.jpg") 1x,
+url("img/o-CALL-CENTER-facebook.jpg") 2x,url("img/o-CALL-CENTER-facebook.webp") 1x,
+url("img/o-CALL-CENTER-facebook.webp") 2x);
 }
 
 /* = Custom Bric Data
@@ -783,24 +778,6 @@ url("img/DSC09241%20Atrio%20New.webp") 2x);
 	filter: drop-shadow(0px 6px 2px rgba(0,0,0,0.3));
 	overflow: visible;
 }
-
-/* = Additional CSS
--------------------------------------------------------------- */
- <!DOCTYPE html>
-<html>
-<head>
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-</head>
-<body>
-
-<i class="glyphicon glyphicon-cloud"></i>
-<i class="glyphicon glyphicon-remove"></i>
-<i class="glyphicon glyphicon-user"></i>
-<i class="glyphicon glyphicon-envelope"></i>
-<i class="glyphicon glyphicon-thumbs-up"></i>
-
-</body>
-</html> 
 
 
 /* = Bloc Padding Multi Breakpoint
@@ -953,23 +930,33 @@ url("img/DSC09241%20Atrio%20New.webp") 2x);
 	.hero-fill-mask{
 		fill:rgba(0,0,0,0.80);
 	}
-	.h2-style{
-		font-size:27px;
-	}
 	.h1-style{
 		font-size:20px;
 	}
-	.p-style{
-		font-size:15px;
-	}
-	.navbar-brand img{
-		width:100px;
-	}
-	.h1-hero-style{
-		font-size:19px;
-	}
-	.p-hero-style{
+	.h3-style{
 		font-size:11px;
+		width:100%;
+	}
+	.h1-heading-style{
+		font-size:22px;
+	}
+	.btn-bloc-13-style{
+		border-radius:11px 11px 11px 11px;
+	}
+	.btn-5-style{
+		border-radius:13px 13px 13px 13px;
+	}
+	.btn-6-style{
+		border-radius:11px 11px 11px 11px;
+	}
+	.btn-7-style{
+		border-radius:10px 10px 10px 10px;
+	}
+	.h2-style{
+		font-size:24px;
+	}
+	.h1-bloc-14-style{
+		font-size:17px;
 	}
 	
 }
